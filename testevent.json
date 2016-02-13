@@ -1,0 +1,113 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.0",
+      "ses": {
+        "mail": {
+          "commonHeaders": {
+            "from": [
+              "Your Name <yourname@domain.net>"
+            ],
+            "to": [
+              "autoexpensify@domain.net"
+            ],
+            "returnPath": "yourname@domain.net",
+            "messageId": "<CAH_D65MZ362un+9vabmZj5JUL2rrOc7zRvLj02gfHLe6F9_tRg@mail.gmail.com>",
+            "date": "Fri, 12 Feb 2016 04:20:10 -0500",
+            "subject": "Fwd: Your ticket order has been confirmed!"
+          },
+          "source": "autoexpensify@domain.net",
+          "timestamp": "2016-02-12T09:20:31.625Z",
+          "destination": [
+            "autoexpensify@seatgeek.com"
+          ],
+          "headers": [
+            {
+              "name": "Return-Path",
+              "value": "<autoexpensify@domain.net>"
+            },
+            {
+              "name": "Received",
+              "value": "from mail-vk0-f43.google.com (mail-vk0-f43.google.com [209.85.213.43]) by inbound-smtp.us-east-1.amazonaws.com with SMTP id fq517upbqcn9o598glqnsqr6de5e9ftshl0t7r81 for autoexpensify@domain.net; Fri, 12 Feb 2016 09:20:31 +0000 (UTC)"
+            },
+            {
+              "name": "Delivered-To",
+              "value": "autoexpensify@domain.net"
+            },
+            {
+              "name": "Return-Path",
+              "value": "<yourname@domain.net>"
+            },
+            {
+              "name": "Received-SPF",
+              "value": "pass (google.com: domain of yourname@domain.net designates 2607:f8b0:4001:c05::236 as permitted sender) client-ip=2607:f8b0:4001:c05::236;"
+            },
+            {
+              "name": "Authentication-Results",
+              "value": "mx.google.com; spf=pass (google.com: domain of yourname@domain.net designates 2607:f8b0:4001:c05::236 as permitted sender) smtp.mailfrom=andyenkeboll@gmail.com; dkim=pass header.i=@domain.net; dmarc=pass (p=NONE dis=NONE) header.from=gmail.com"
+            },
+            {
+              "name": "Received",
+              "value": "by mail-ig0-x236.google.com with SMTP id y8so27459318igp.0 for <autoexpensify@domain.net>; Fri, 12 Feb 2016 01:20:30 -0800 (PST)"
+            },
+            {
+              "name": "MIME-Version",
+              "value": "1.0"
+            },
+            {
+              "name": "From",
+              "value": "Your Name <yourname@domain.net>"
+            },
+            {
+              "name": "Date",
+              "value": "Fri, 12 Feb 2016 04:20:10 -0500"
+            },
+            {
+              "name": "Message-ID",
+              "value": "<CAH_D65MZ362un+9vabmZj5JUL2rrOc7zRvLj02gfHLe6F9_tRg@mail.gmail.com>"
+            },
+            {
+              "name": "Subject",
+              "value": "Fwd: Your ticket order has been confirmed!"
+            },
+            {
+              "name": "To",
+              "value": "autoexpensify@domain.net"
+            },
+            {
+              "name": "Content-Type",
+              "value": "multipart/alternative; boundary=047d7b10c9c1aa2591052b8f2df7"
+            }
+          ],
+          "headersTruncated": false,
+          "messageId": "S3_FILE_NAME"
+        },
+        "receipt": {
+          "recipients": [
+            "autoexpensify@domain.net"
+          ],
+          "timestamp": "2016-02-12T09:20:31.625Z",
+          "spamVerdict": {
+            "status": "PASS"
+          },
+          "dkimVerdict": {
+            "status": "PASS"
+          },
+          "action": {
+            "invocationType": "Event",
+            "type": "Lambda",
+            "functionArn": "arn:aws:lambda:us-east-1:191069634541:function:yourLambdaFuction"
+          },
+          "processingTimeMillis": 593,
+          "spfVerdict": {
+            "status": "PASS"
+          },
+          "virusVerdict": {
+            "status": "PASS"
+          }
+        }
+      },
+      "eventSource": "aws:ses"
+    }
+  ]
+}
